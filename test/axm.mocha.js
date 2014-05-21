@@ -45,9 +45,8 @@ describe('AXM driver', function() {
         done();
       });
 
-      app.send({
-        action_name : action_name
-      });
+      app.send(action_name);
+
     });
 
     it('should not trigger the action if wrong action name', function(done) {
