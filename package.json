@@ -1,0 +1,17 @@
+{
+  "name": "axm",
+  "version": "0.0.1",
+  "description": "AXMonitoring driver for code interactions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "debug" : "*"
+  },
+  "scripts" : {
+    "test" : "mocha test"
+  },
+  "author": "AXMonitoring",
+  "license": "ISC"
+}
