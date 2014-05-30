@@ -17,7 +17,7 @@ app.get('/error', function(req, res, next){
   next(new Error('toto'));
 });
 
-app.use(axm.expressErrorHandler);
+app.use(axm.expressErrorHandler());
 
 
 app.listen(3001);
