@@ -7,10 +7,16 @@
     "test": "mocha"
   },
   "dependencies" : {
-    "debug" : "*"
+    "debug" : "*",
+    "continuation-local-storage" : "*"
+  },
+  "devDependencies" : {
+    "express" : "*",
+    "redis" : "*",
+    "request" : "*"
   },
   "scripts" : {
-    "test" : "mocha test"
+    "test" : "DEBUG='axm:*' mocha test"
   },
   "author": "AXMonitoring",
   "license": "ISC"
