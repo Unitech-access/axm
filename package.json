@@ -1,6 +1,6 @@
 {
   "name": "axm",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "keymetrics adapter",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   "devDependencies" : {
     "express" : "*",
     "redis" : "*",
-    "request" : "*"
+    "request" : "*",
+    "should" : "*"
   },
   "scripts" : {
     "test" : "DEBUG='axm:*' mocha test"
