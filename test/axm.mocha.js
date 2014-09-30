@@ -40,7 +40,7 @@ describe('AXM driver', function() {
     it('should trigger the action', function(done) {
       app.once('message', function(dt) {
         dt.type.should.eql('axm:reply');
-        dt.data.res.should.eql('hello moto');
+        dt.data.return.res.should.eql('hello moto');
         done();
       });
 

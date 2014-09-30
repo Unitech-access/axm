@@ -15,7 +15,7 @@ describe('Event', function() {
     var app = fork();
 
     app.once('message', function(data) {
-      data.type.should.eql('human_event');
+      data.type.should.eql('human:event');
       done();
     });
   });
