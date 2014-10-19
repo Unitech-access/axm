@@ -1,7 +1,7 @@
 {
   "name": "axm",
-  "version": "0.2.13",
-  "description": "keymetrics adapter",
+  "version": "0.2.14",
+  "description": "keymetrics I/O adapter",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
