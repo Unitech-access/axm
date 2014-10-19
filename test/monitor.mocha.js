@@ -8,7 +8,7 @@ function fork() {
 describe('Event', function() {
 
   it('should have properties', function(done) {
-    axm.should.have.property('activeCustomMonitor');
+    axm.should.have.property('enableProbes');
     done();
   });
 

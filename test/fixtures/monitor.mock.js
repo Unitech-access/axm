@@ -1,7 +1,7 @@
 
 var axm = require('../..');
 
-var obj = axm.activeCustomMonitor();
+var obj = axm.enableProbes();
 
 obj.it_works = true;
 obj.value = 20;
