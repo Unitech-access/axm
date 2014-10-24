@@ -5,7 +5,7 @@ function fork() {
   return require('child_process').fork(__dirname + '/fixtures/monitor.mock.js', []);
 }
 
-describe('Event', function() {
+describe('Monitor', function() {
 
   it('should have properties', function(done) {
     axm.should.have.property('enableProbes');

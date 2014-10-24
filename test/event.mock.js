@@ -2,6 +2,8 @@
 
 var axm = require('..');
 
-axm.emit('test', {
-  user : 'toto'
-});
+setInterval(function() {
+  axm.emit('test', {
+    user : 'toto'
+  });
+}, 100);

@@ -18,7 +18,6 @@ describe('AXM transaction', function() {
 
     app.on('message', function(data) {
       data.type.should.eql('http:transaction');
-      console.log(data);
       process.kill(app.pid);
       done();
     });

@@ -9,4 +9,8 @@ obj.value = 20;
 setTimeout(function() {
   obj.it_works = false;
   obj.value = 99;
-}, 1200);
+
+  setTimeout(function() {
+    axm.stopProbes();
+  }, 1100);
+}, 1100);
