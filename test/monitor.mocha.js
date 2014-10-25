@@ -12,7 +12,6 @@ describe('Monitor', function() {
     done();
   });
 
-
   it('should send event when called', function(done) {
     var app = fork();
 

@@ -1,6 +1,7 @@
 
 
 var axm = require('..');
+var should = require('should');
 
 function forkCatch() {
   var app = require('child_process').fork(__dirname + '/fixtures/notify_catch_all.mock.js', []);
@@ -17,6 +18,28 @@ describe('Notify exceptions', function() {
     axm.should.have.property('catchAll');
     axm.should.have.property('notify');
     axm.should.have.property('expressErrorHandler');
+    done();
+  });
+
+  it('should process simple string error', function(done) {
+    var ret = axm._interpretError('this is a message');
+    should.exist(ret.stack);
+    should.exist(ret.message);
+    ret.message.should.eql('this is a message');
+    done();
+  });
+
+  it('should process data object', function(done) {
+    var ret = axm._interpretError({
+      line : 'ok',
+      env : 'sisi'
+    });
+
+    should.exist(ret.stack);
+    should.exist(ret.message);
+
+    ret.data.line.should.eql('ok');
+    ret.data.env.should.eql('sisi');
     done();
   });
 
