@@ -10,7 +10,8 @@
     "express" : "*",
     "redis" : "*",
     "request" : "*",
-    "should" : "*"
+    "should" : "*",
+    "mocha": "*"
   },
   "scripts" : {
     "test" : "DEBUG='axm:*' mocha test"
