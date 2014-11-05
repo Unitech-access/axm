@@ -46,18 +46,21 @@ describe('Notify exceptions', function() {
   it('should catchAll exception in fork mode', function(done) {
     var app = forkCatch();
 
-    app.on('message', function(data) {
-      data.type.should.eql('process:exception');
-      data.data.message.should.eql('global error');
-      process.kill(app.pid);
-      done();
+    app.once('message', function(data) {
+      data.type.should.eql('axm:option:configuration');
+      app.once('message', function(data) {
+        data.type.should.eql('process:exception');
+        data.data.message.should.eql('global error');
+        process.kill(app.pid);
+        done();
+      });
     });
   });
 
   it('should notify process about error', function(done) {
     var app = forkNotify();
 
-    app.on('message', function(data) {
+    app.once('message', function(data) {
       data.type.should.eql('process:exception');
       data.data.message.should.eql('hey');
       process.kill(app.pid);

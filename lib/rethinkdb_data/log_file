@@ -1,0 +1,9 @@
+2014-11-05T01:48:45.924628228 0.124012s info: Initializing directory /home/shant/keymetrics/axm/lib/rethinkdb_data
+2014-11-05T01:48:45.964558478 0.163943s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/shant/keymetrics/axm/lib/rethinkdb_data' did not already exist or is empty.)
+2014-11-05T01:48:45.964648237 0.164032s info: Running rethinkdb 1.15.0-1-0ubuntu1~trusty (GCC 4.8.2)...
+2014-11-05T01:48:45.969857799 0.169242s info: Running on Linux 3.13.0-36-generic x86_64
+2014-11-05T01:48:45.969909261 0.169293s info: Using cache size of 100 MB
+2014-11-05T01:48:45.970232053 0.169616s warn: Cache size does not leave much memory for server and query overhead (available memory: 120 MB).
+2014-11-05T01:48:45.970262993 0.169647s warn: Cache size is very low and may impact performance.
+2014-11-05T01:48:45.970285240 0.169669s info: Loading data from directory /home/shant/keymetrics/axm/lib/rethinkdb_data
+2014-11-05T01:48:46.615776823 0.815161s error: Could not bind to cluster port: The address at localhost:29015 is reserved or already in use.
