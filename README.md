@@ -4,6 +4,7 @@
 ```javascript
 var axm = require('axm');
 
+
 axm.emit('user:register', {
   user : 'Alex registered',
   email : 'thorustor@gmail.com'
