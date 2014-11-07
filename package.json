@@ -1,6 +1,6 @@
 {
   "name": "axm",
-  "version": "0.2.20",
+  "version": "0.2.21",
   "description": "keymetrics I/O adapter",
   "main": "index.js",
   "dependencies" : {
