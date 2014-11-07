@@ -32,7 +32,7 @@ describe('Notify exceptions', function() {
   it('should process data object', function(done) {
     var ret = axm._interpretError({
       line : 'ok',
-      env : 'sisi'
+      env  : 'sisi'
     });
 
     should.exist(ret.stack);
