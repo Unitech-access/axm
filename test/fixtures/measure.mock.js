@@ -11,5 +11,5 @@ http.createServer(function(req, res) {
 }).listen(3000);
 
 probe['1min rate'] = function() {
-  return meter.toJSON()['1MinuteRate'];
+	return meter.toJSON()['1MinuteRate'];
 };
