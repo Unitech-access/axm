@@ -14,3 +14,12 @@ obj.count = Object.keys(a).length;
 obj.countFn = function() {
   return Object.keys(a).length;
 };
+
+setTimeout(function () {
+  a.ccc = 'test';
+  a.ddd = 'test';
+
+  setTimeout(function () {
+    axm.stopProbes();
+  }, 1100);
+}, 1100);

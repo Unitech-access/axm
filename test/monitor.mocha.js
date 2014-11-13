@@ -31,6 +31,7 @@ describe('Monitor', function() {
 
         pck.data.it_works.should.eql(false);
         pck.data.value.should.eql(99);
+        pck.data.i.should.eql(2);
 
         app.kill();
 
@@ -44,11 +45,21 @@ describe('Monitor', function() {
 
     app.once('message', function(pck) {
       pck.type.should.eql('axm:monitor');
-      console.log(pck);
-      app.kill();
-      done();
-    });
 
+      pck.data.count.should.eql(2);
+      pck.data.countFn.should.eql(2);
+
+      app.once('message', function(pck) {
+        pck.type.should.eql('axm:monitor');
+
+        pck.data.count.should.eql(2);
+        pck.data.countFn.should.eql(4);
+
+        app.kill();
+
+        done();
+      });
+    });
   });
 
 });
