@@ -1,14 +1,14 @@
 {
   "name": "axm",
-  "version": "0.2.21",
+  "version": "0.2.22",
   "description": "keymetrics I/O adapter",
   "main": "index.js",
   "dependencies" : {
-    "debug" : "*"
+    "debug" : "*",
+    "measured" : "*"
   },
   "devDependencies" : {
     "express" : "*",
-    "redis" : "*",
     "request" : "*",
     "should" : "*",
     "mocha": "*"

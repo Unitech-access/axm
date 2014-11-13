@@ -5,12 +5,17 @@ function fork() {
   return require('child_process').fork(__dirname + '/fixtures/monitor.mock.js', []);
 }
 
+function forkMonitor2() {
+  return require('child_process').fork(__dirname + '/fixtures/monitor2.mock.js', []);
+}
+
 describe('Monitor', function() {
 
   it('should have properties', function(done) {
     axm.should.have.property('enableProbes');
     done();
   });
+
 
   it('should send event when called', function(done) {
     var app = fork();
@@ -31,7 +36,17 @@ describe('Monitor', function() {
 
         done();
       });
+    });
+  });
 
+  it('should send right value with monitor2', function(done) {
+    var app = forkMonitor2();
+
+    app.once('message', function(pck) {
+      pck.type.should.eql('axm:monitor');
+      console.log(pck);
+      app.kill();
+      done();
     });
 
   });
