@@ -125,3 +125,7 @@ setInterval(function() {
   histogram.update(latency);
 }, 100);
 ```
+
+# License
+
+MIT
