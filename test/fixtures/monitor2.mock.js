@@ -9,6 +9,7 @@ var a = {
   'bbb' : { 'ok' : false }
 };
 
+// Does not refresh because it copies the val
 obj.count = Object.keys(a).length;
 
 obj.countFn = function() {

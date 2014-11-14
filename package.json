@@ -4,8 +4,7 @@
   "description": "keymetrics I/O adapter",
   "main": "index.js",
   "dependencies" : {
-    "debug" : "*",
-    "measured" : "*"
+    "debug" : "*"
   },
   "devDependencies" : {
     "express" : "*",
