@@ -18,7 +18,7 @@ describe('Probe', function() {
     var probe = axm.probe();
 
     probe.should.have.property('meter');
-    probe.should.have.property('gauge');
+    probe.should.have.property('metric');
     probe.should.have.property('histogram');
     probe.should.have.property('counter');
     done();

@@ -11,7 +11,7 @@ var users = {
 /**
  * Monitor synchronous return of functions
  */
-var rt_users = probe.gauge({
+var rt_users = probe.metric({
   name : 'Realtime user',
   value : function() {
     return Object.keys(users).length;
@@ -21,7 +21,7 @@ var rt_users = probe.gauge({
 /**
  * Monitor value
  */
-var cheerio = probe.gauge({
+var cheerio = probe.metric({
   name : 'Cheerio',
   value : true
 });
