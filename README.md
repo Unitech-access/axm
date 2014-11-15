@@ -44,11 +44,17 @@ axm.emit('user:register', {
 ```javascript
 var axm = require('axm');
 
-axm.action('db:clean', function(reply) {
-  clean.db();
-  reply({success : true});
+axm.action('db:clean', { comment : 'Description for this action' }, function(reply) {
+  clean.db(function() {
+    /**
+     * reply() must be called at the end of the action
+     */
+     reply({success : true});
+  });
 });
 ```
+
+Note: in case of exceptions in the function, your app will not be affected
 
 ## Errors
 
