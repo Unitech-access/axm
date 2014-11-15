@@ -1,12 +1,34 @@
+
 # AXM module for Keymetrics I/O
 
-AXM module
+AXM is a module that allows you to create advanced interactions with Keymetrics I/O.
+
+With it you can:
+- Trigger remote actions / functions
+- Analyze custom metrics / variables (with utilities like Histogram/Counter/Metric/Meters)
+- Report errors (uncaught exceptions and custom errors)
+- Emit events
+- Analyze HTTP latency
+
+# Installation
+
+[![Build Status](https://api.travis-ci.org/keymetrics/axm.png?branch=master)]
+
+Install AXM and add it to your package.json via:
+
+```bash
+$ npm install axm --save
+```
+
+Then to use the different systems in your code require it:
 
 ```javascript
 var axm = require('axm');
 ```
 
 ## Emit Events
+
+Emit events and get historical and statistics:
 
 ```javascript
 var axm = require('axm');
