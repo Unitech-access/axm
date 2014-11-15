@@ -12,7 +12,7 @@ With it you can:
 
 # Installation
 
-[![Build Status](https://api.travis-ci.org/keymetrics/axm.png?branch=master)]
+![Build Status](https://api.travis-ci.org/keymetrics/axm.png?branch=master)
 
 Install AXM and add it to your package.json via:
 
