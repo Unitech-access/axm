@@ -33,7 +33,7 @@ describe('Probe', function() {
 
       console.log(pck);
 
-      if (pck.data.random > 0 &&
+      if (pck.data.random &&
           pck.data.Cheerio == false &&
           pck.data.Downloads > 1) {
         app.kill();

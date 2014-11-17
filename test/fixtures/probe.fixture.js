@@ -39,7 +39,7 @@ var http  = require('http');
 http.createServer(function(req, res) {
   meter.mark();
   res.end('Thanks');
-}).listen(3000);
+}).listen(3400);
 
 /**
  * Meter example
@@ -47,6 +47,7 @@ http.createServer(function(req, res) {
 
 var meter2 = probe.meter({
   name    : 'random',
+  unit    : 'rd',
   seconds : 1
 });
 

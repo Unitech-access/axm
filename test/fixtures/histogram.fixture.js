@@ -18,7 +18,8 @@ setInterval(function() {
 
 var h2 = probe.histogram({
   name : 'mean',
-  measurement : 'mean'
+  measurement : 'mean',
+  unit : 'ms'
 });
 
 var b = 0;

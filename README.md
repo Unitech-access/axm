@@ -1,6 +1,8 @@
 
 # AXM module for Keymetrics I/O
 
+<!-- [![NPM](https://nodei.co/npm-dl/axm.png?months=3&height=2)](https://nodei.co/npm/axm/) -->
+
 AXM is a module that allows you to create advanced interactions with Keymetrics I/O.
 
 With it you can:
